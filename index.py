@@ -5,27 +5,28 @@
 #
 # ```
 # YOUR_GREETING_VARIABLE YOUR_NAME_VARIABLE!!! I hear that you are YOUR_MY_AGE_VARIABLE today!
-# # ```
-# greeting = "Sup, my guy!"
-# myName = "Chris!"
-# myAge = "9,100 years old"
-#
-# print(f"{greeting} {myName} I hear that you are turning {myAge} today! Mad respect!")
+# ```
+greeting = "Sup, my guy!"
+myName = "Chris!"
+myAge = "9,100 years old"
+
+print(f"{greeting} {myName} I hear that you are turning {myAge} today! Mad respect!")
+# NOTE : you did not include the version using conatination
 
 ### Problem 2:
 # Write some Python code that asks the user for a secret password. Create a loop that quits with the user' quit word. If the user doesn't enter that word, ask them to guess again.
-# confirm = ""
-# userInput = ""
-# quitWord = "nope"
-# while userInput != quitWord:
-#     userInput = input("Enter your secret password. Type 'nope' to quit.")
-#     confirm = input("Confirm password")
-#     if userInput != confirm:
-#         print("Incorrect.")
-#     else:
-#         print("correct!")
-#
-# print("welcome")
+confirm = ""
+userInput = ""
+quitWord = "nope"
+while userInput != quitWord: # NOTE : the quit word should be the password not another value. You are not breaking out of the loop if they get the password correct
+    userInput = input("Enter your secret password. Type 'nope' to quit.")
+    confirm = input("Confirm password")
+    if userInput != confirm:
+        print("Incorrect.")
+    else:
+        print("correct!")
+
+print("welcome")
 
 
 # ### Problem 3:
